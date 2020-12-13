@@ -99,5 +99,7 @@ if __name__ == "__main__":
     parser.run_without_repeats()
     print('Task 1: {}'.format(parser.accumulator))
 
+    parser.clear()
+
     line = fix_instruction_and_run(parser)
     print('Task 2: broken line {}, accumulator: {}'.format(line, parser.accumulator))
